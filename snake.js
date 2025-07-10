@@ -62,14 +62,7 @@ function draw() {
   // Update score
   document.getElementById("score").textContent = "Score: " + score;
 }
-/*
-function placeFood() {
-  food = {
-    x: Math.floor(Math.random() * tileCount),
-    y: Math.floor(Math.random() * tileCount)
-  };
-}
-*/
+
 
 function placeFood() {
   let newFood;
@@ -101,20 +94,7 @@ function changeDirection(e) {
     dx = 1; dy = 0;
   }
 }
-/*
-function restartGame() {
-  snake = [{ x: 10, y: 10 }];
-  food = { x: 5, y: 5 };
-  dx = 1;
-  dy = 0;
-  score = 0;
-  speed = 150;
-  gameOver = false;
-  document.getElementById("restartBtn").style.display = "none";
-  document.getElementById("score").textContent = "Score: 0";
-  setInterval(draw, speed);
-}
-*/
+
 
 function restartGame() {
     snake = [{ x: 10, y: 10 }];
